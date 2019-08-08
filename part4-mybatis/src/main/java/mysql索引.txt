@@ -1,0 +1,25 @@
+mysql索引类型
+    普通索引
+    唯一索引
+    主键索引
+    多列索引(组合索引)
+    全文索引
+
+mysql索引数据结构
+    B树
+    B+树(innodb)
+        簇族索引与非簇族索引区别
+    hash
+    红黑树
+
+mysql索引使用注意事项
+    null值问题
+    索引列计算值索引
+    %aa问题
+    最前匹配问题
+    <> !=
+    not in,not exists效率和索引问题(https://blog.csdn.net/baidu_37107022/article/details/77278381)
+
+mysql引擎及其各自特性
+    MyISAM
+    innodb
