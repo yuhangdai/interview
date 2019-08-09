@@ -14,7 +14,9 @@ import java.util.List;
 public class GenericDemo {
 
     public static void test(List<? extends A> a){
-
+        a.forEach(item->{
+            System.out.println(item.getClass().toString());
+        });
     }
 
     public static void main(String[] args) {
