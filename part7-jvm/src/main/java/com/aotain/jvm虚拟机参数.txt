@@ -1,6 +1,10 @@
+项目常用jvm参数
+-Xms2048m -Xmx4096m -XX:+UseParNewGC -XX:+UseConcMarkSweepGC -XX:-CMSConcurrentMTEnabled
+-XX:CMSInitiatingOccupancyFraction=70 -XX:+CMSParallelRemarkEnabled
+
+
 --Tools
 jclasslib     https://bintray.com/ingokegel/generic/jclasslib/4.3.1
-
 
 
 -Xmx32m 设置最大堆内存大小为32M
