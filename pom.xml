@@ -17,6 +17,8 @@
     <module>part6-kafka</module>
     <module>part7-jvm</module>
     <module>part8-thread</module>
+    <module>part9-springboot</module>
+    <module>part10-springcloud</module>
   </modules>
 
   <name>interview</name>
