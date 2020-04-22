@@ -1,0 +1,4 @@
+记录java编译中一些特殊处理
+
+autoassembly:自动拆装箱编译器处理
+traverse: foreach遍历转换
