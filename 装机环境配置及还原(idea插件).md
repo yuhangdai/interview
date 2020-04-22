@@ -18,9 +18,12 @@
 ​		idea配置svn执行路径
 
 ​	GIT
-
-​		
-
+    本地免密提交代码
+    
+    创建文件存储GIT用户名和密码
+    在c:\user\Administrator目录下新建.git-credentials(可使用git bash touch命令进行创建)
+    在.git-credentials输入https://{username}:{password}@github.com（可食用git bash vim命令）
+    
 ​	EdrawSoft_Edraw_Max
 ​	Fiddler
 ​	IntelliJ IDEA
