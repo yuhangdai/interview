@@ -20,6 +20,12 @@
     // 新增了10个元素后会进行扩容,扩容到1.5倍
     // newSize = oldSize + oldSize>>1
     // 后续执行和前面类似
+    
+#### 注意
+    Arrays.copyof()
+    System.arraycopy()
+   最好在 add 大量元素之前用 ensureCapacity 方法，以减少增量重新分配的次数
+
 ### Set
    保存不重复的集合数据
    
