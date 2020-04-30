@@ -86,5 +86,6 @@ public class ListTraverse {
         System.out.println(begin4);
         System.out.println(end4);
         System.out.println("linked list foreach used "+(end4-begin4)+" ms");
+
     }
 }
