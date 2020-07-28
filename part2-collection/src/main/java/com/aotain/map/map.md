@@ -51,3 +51,5 @@
     CAS 
 参考文档
     [JAVA HASHMAP的死循环](https://coolshell.cn/articles/9606.html)
+    [HashMap? ConcurrentHashMap?](https://crossoverjie.top/2018/07/23/java-senior/ConcurrentHashMap/)
+    [hashMap常见面试问题](https://github.com/yuhangdai/JavaGuide/blob/master/docs/java/collection/HashMap.md)
