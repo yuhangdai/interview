@@ -24,6 +24,8 @@ public class Driver2 {
         }
         try {
             doneSignal.await();
+            ThreadPoolExecutor threadPoolExecutor = (ThreadPoolExecutor)executor;
+            threadPoolExecutor.shutdown();
             System.out.println("finish all "+N+" works");
         } catch (InterruptedException e) {
             e.printStackTrace();
