@@ -1,3 +1,17 @@
+### HashMap插入数据过程
+- 初次插入初始化table（capacity获取方法）
+- 对key进行hash (hashCode%n == n-1 && hashCode 当n为2的n次方时成立)
+- 根据hash取模
+
+    * 如果tab[i] == null 则直接新建node然后插入
+    * 如果tab[i] != null (说明此位置已被占用)
+    1. key值一样，更新value即可
+    2. key值不一样（说明此位置被其他key value占用）
+        + 冲突处理为treeNode(按treeNode方式添加元素)
+        + 冲突处理为linkNode
+            - 依次向后移动指针，如果遇到为空的直接新建node即可
+            - 如果移动超过TREEIFY_THRESHOLD次都不为空，将节点转化为treeNode
+
 #### hashMap扩容机制
    table.size > loadFactory * oldSize 时会触发扩容
    当前hash表的大小 >  loadFactory * oldSize
@@ -45,6 +59,26 @@
     
 #### ConcurrentHashMap 
 
+- 1.初次插入初始化table（capacity获取方法）
+- 2.对key进行hash (hashCode%n == n-1 && hashCode 当n为2的n次方时成立)
+- 3.tabAt(tab,i)查看tab当前位置i是否存在元素
+    + 若不存在（casAtTab()插入节点）  
+        1. 若插入成功，break跳出死循环
+        2. 若插入失败，重复操作1、2、3
+    + 若存在（判断(fh = f.hash) == MOVED）
+        * 相等 （transfer） 
+        * tabAt(tab, i) == f
+            1. i位置还未成功插入数据，进行插入操作
+                + fh >= 0 
+                    
+                    如果key相等替换，否则加入到链表后面；
+    
+                + f instanceof TreeBin
+                
+                    插入到树节点中
+            2. 判断是否需要将链表结构改为树结构
+
+
 ##### JDK1.7实现
     Segment实现分段锁
 ##### JDK1.8实现
@@ -53,3 +87,9 @@
     [JAVA HASHMAP的死循环](https://coolshell.cn/articles/9606.html)
     [HashMap? ConcurrentHashMap?](https://crossoverjie.top/2018/07/23/java-senior/ConcurrentHashMap/)
     [hashMap常见面试问题](https://github.com/yuhangdai/JavaGuide/blob/master/docs/java/collection/HashMap.md)
+    
+#### TreeMap
+
+
+#### HashSet(基于HashMap实现)
+#### TreeSet(基于TreeMap实现)
