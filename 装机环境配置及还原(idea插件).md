@@ -36,7 +36,7 @@
 
 ​	office
 ​	TeamViewer
-
+    Everything （windows文件搜索工具）
 #### 破解idea
 
 ​	https://www.cnblogs.com/lxg0/articles/8067526.html

@@ -20,5 +20,6 @@ public class GuavaBloomTest {
         integerBloomFilter.put(2);
         System.out.println(integerBloomFilter.mightContain(1));
         System.out.println(integerBloomFilter.mightContain(2));
+
     }
 }
