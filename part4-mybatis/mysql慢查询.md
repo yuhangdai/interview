@@ -30,4 +30,7 @@ in查询相当于多个or条件的叠加
     select * from A where exists(select fun(xx) AS cc from B where cc=A.cc)
     
     
-    
+### mysql sum(format)数据异常问题
+format(1230,2)-->1,230.00 （超过三位数）会增加逗号
+然后对其结果进行sum会导致数据问题    
+解决方法: format函数改为cast或者convert
