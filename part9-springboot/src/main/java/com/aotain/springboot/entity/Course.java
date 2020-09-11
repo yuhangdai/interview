@@ -1,6 +1,8 @@
 package com.aotain.springboot.entity;
 
 import lombok.Data;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 /**
  * Demo class
@@ -13,4 +15,10 @@ public class Course {
 
     private Student student;
 
+    @Override
+    public String toString() {
+        return "Course{" +
+                "student=" + student +
+                '}';
+    }
 }

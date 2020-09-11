@@ -134,3 +134,6 @@
 
 [web项目多applicationContext容器问题](https://blog.csdn.net/Julycaka/article/details/79287812)
 
+### spring bean循环引用
+使用构造器注入方式无法解决，属性注入可以正常生成bean对象，但是如果没有重写toString()方法，
+输出对象会导致Stack Over Flow

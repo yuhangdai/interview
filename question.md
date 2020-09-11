@@ -10,3 +10,12 @@
 then you will need to use mdelete to delete multiple files, as delete will only delete a single file
 ftp操作多个文件 使用prompt关闭交互模式
 ftp delete命令不能删除文件夹
+
+### soap ui
+1.soap ui进行rest api调用时，传递中文参数报400错误。后台JSON解析异常   
+[解决办法](https://blog.csdn.net/gongjin28_csdn/article/details/90750283)  
+找到soap ui安装目录（可执行文件），在此目录下找到SoapUI-xxx.vmoptions文件，
+在文件结尾添加如下两行代码即可。
+
+    -Dsun.jnu.encoding=UTF-8
+    -Dfile.encoding=UTF-8

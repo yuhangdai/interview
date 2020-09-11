@@ -19,6 +19,9 @@ public class DynamicInvocationHandler implements InvocationHandler{
 
     @Override
     public Object invoke(Object object, Method method, Object[] args) throws Throwable {
-        return method.invoke(target,args);
+        System.out.println("before method call...");
+        Object obj =  method.invoke(target,args);
+        System.out.println("after method call...");
+        return obj;
     }
 }

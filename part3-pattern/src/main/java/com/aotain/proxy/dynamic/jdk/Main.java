@@ -20,7 +20,7 @@ public class Main {
         ILogger logger = new LoggerImpl();
         DynamicInvocationHandler dynamicInvocationHandler = new DynamicInvocationHandler(logger);
         ILogger loggerImpl = (ILogger) Proxy.newProxyInstance(Main.class.getClassLoader(),new Class[]{ILogger.class}, dynamicInvocationHandler);
-        loggerImpl.logger();
+        loggerImpl.hashCode();
 
         ICommonMapper commonMapper = new AMapperImpl();
         dynamicInvocationHandler = new DynamicInvocationHandler(commonMapper);
