@@ -17,7 +17,7 @@ public class TestSpring {
 
     @Test
     public void testSpring() {
-        ApplicationContext ctx = new ClassPathXmlApplicationContext("application.xml");
+        ApplicationContext ctx = new ClassPathXmlApplicationContext("application-test.xml");
         Course course = (Course) ctx.getBean("course");
         System.out.println(course);
     }

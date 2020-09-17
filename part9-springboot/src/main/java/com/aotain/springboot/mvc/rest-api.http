@@ -1,0 +1,36 @@
+POST http://localhost:8080/api/book
+Content-Type: application/x-www-form-urlencoded
+
+id=99&name=new-element
+
+###
+POST http://192.168.3.110:8080/api/book
+Content-Type: application/json
+
+{
+  "isbn": "1",
+  "name": "李敖大全集1"
+}
+
+###
+POST http://192.168.3.110:8080/api/book
+Content-Type: application/json
+
+{
+  "isbn": "2",
+  "name": "李敖大全集2"
+}
+
+###
+GET http://192.168.3.110:8080/api/book
+
+###
+GET http://192.168.3.110:8080/api/book/1
+
+###
+DELETE http://192.168.3.110:8080/api/book/1
+
+###
+GET http://192.168.3.110:8080/api/book
+
+###
