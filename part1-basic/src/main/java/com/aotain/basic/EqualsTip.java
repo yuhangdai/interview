@@ -28,6 +28,8 @@ public class EqualsTip {
         System.out.println(a1 == a2);
         // true
         System.out.println(a3 == a4);
+        // true
+        System.out.println(a1 == a3);
         // false
         System.out.println(a1 == a5);
         // true
