@@ -18,5 +18,13 @@ public class Compare {
         String str3 = "hello";
         String str4 = new String("hello");
         System.out.println(str3==str4);  // false
+
+        // String.intern()方法
+        // https://tech.meituan.com/2014/03/06/in-depth-understanding-string-intern.html
+
+        String str5 = new String("hello").intern();
+        System.out.println(str3 == str5);  // true
+
+
     }
 }

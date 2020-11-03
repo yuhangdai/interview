@@ -29,4 +29,12 @@ JDK1.7及之后版本的 JVM 已经将运行时常量池从方法区中移了出
    字面量常量()
    
 #### Java对象创建完整过程
-   
+  
+  
+### **关于常量池** 
+
+#### 字符串常量池   
+[What is Java String Pool](https://www.journaldev.com/797/what-is-java-string-pool)
+#### Class常量池   
+
+#### 运行时常量池
