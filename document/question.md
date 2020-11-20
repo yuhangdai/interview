@@ -38,3 +38,14 @@ initialSize="10"
 
 ### div实现y轴滚动条
 [DIV实现纵向滚动条overflow-y](cnblogs.com/wellsoho/p/5102014.html)
+
+### idea打包war包并在tomcat运行时文件路径
+[idea部署war包文件路径](https://blog.csdn.net/Victor_Cindy1/article/details/72680553)
+${user.home}/.IntelliJIdea/system/tomcat
+
+### IDEA显示各种toolbar
+[IDEA toolbar显示与隐藏](https://blog.csdn.net/xb12369/article/details/106302577)
+
+### sock5服务器搭建
+[sock5](https://iblogs.top/2019/05/21/socks5%E4%BB%A3%E7%90%86%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/)
+[sock5一键搭建](https://github.com/wyx176/Socks5)
