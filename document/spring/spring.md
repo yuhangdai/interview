@@ -129,11 +129,28 @@
 
 [参考资料1](https://juejin.im/post/6844904014337802248#heading-2)  
 [循环引用问题](https://juejin.im/post/6865575492867588110)
+[循环引用问题](https://cloud.tencent.com/developer/article/1497692)
+
 
 ### springmvc启动多applicationContext问题
 
 [web项目多applicationContext容器问题](https://blog.csdn.net/Julycaka/article/details/79287812)
 
 ### spring bean循环引用
-使用构造器注入方式无法解决，属性注入可以正常生成bean对象，但是如果没有重写toString()方法，
+使用构造器注入方式无法解决；
+属性注入可以正常生成bean对象，但是如果没有重写toString()方法，
 输出对象会导致Stack Over Flow
+
+循环引用bean创建流程
+```
+    Creating shared instance of singleton bean 'student'
+    Creating instance of bean 'student'
+    Eagerly caching bean 'student' to allow for resolving potential circular references
+    Creating shared instance of singleton bean 'course'
+    Creating instance of bean 'course'
+    Returning eagerly cached instance of singleton bean 'student' that is not fully initialized yet - a consequence of a circular reference
+    Finished creating instance of bean 'course'
+    Finished creating instance of bean 'student'
+    Returning cached instance of singleton bean 'course'
+    Returning cached instance of singleton bean 'course'
+```
