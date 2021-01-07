@@ -54,8 +54,14 @@
    当hash冲突key链表长度>8 && 数组长度 > 64时会将链表转化为红黑树（方便查找）进行冲突处理
     
 #### hashMap多线程下会出现什么问题？
+[hashmap多线程可能导致的问题](https://www.cnblogs.com/aspirant/p/11504389.html)
    hashMap **rehash**()执行过程
    多线程下rehash过程可能会导致环形链接，从而造成死循环    
+   
+**hashMap多线程可能导致的问题**
+1. rehash导致死循环
+2. 多线程put的时候可能导致元素丢失
+3. put非null元素后get出来的却是null
     
 #### ConcurrentHashMap 
 

@@ -59,4 +59,22 @@ public class EqualsTip {
         // false
         System.out.println(s2==s5);
     }
+
+    @Test
+    public void test4(){
+        String a = "hello2";
+        String b = "hello";
+        String c = b + 2;
+        // false
+        System.out.println(a == c);
+
+        String d = "helloworld";
+        String e = b+"world";
+        // false
+        System.out.println(d == e);
+
+        String f = "hello"+"world";
+        // true
+        System.out.println(d == f);
+    }
 }

@@ -49,3 +49,17 @@ ${user.home}/.IntelliJIdea/system/tomcat
 ### sock5服务器搭建
 [sock5](https://iblogs.top/2019/05/21/socks5%E4%BB%A3%E7%90%86%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/)
 [sock5一键搭建](https://github.com/wyx176/Socks5)
+
+### hashMap多线程可能导致的问题
+[hashMap多线程问题](https://www.cnblogs.com/aspirant/p/11504389.html)
+### hash冲突解决方法
+[hash冲突](https://zhuanlan.zhihu.com/p/29520044)
+### 锁升级过程
+[锁升级](https://blog.csdn.net/tongdanping/article/details/79647337)
+### 红黑树定义
+- 节点是红色或黑色
+- 根是黑色
+- 所有叶子都是黑色
+- 从任一节点到其每个叶子的所有简单路径都包含相同数目的黑色节点
+- 每个红色节点必须有两个黑色的子节点。（从每个叶子到根的所有路径上不能有两个连续的红色节点。)
+### 红黑树重新涂色条件

@@ -34,5 +34,7 @@ public class StreamTest {
         System.out.println("筛选列表: " + filteredList);
         String mergedString = stringList.stream().filter(string -> !string.isEmpty()).collect(Collectors.joining(", "));
         System.out.println("合并字符串: " + mergedString);
+
+
     }
 }
