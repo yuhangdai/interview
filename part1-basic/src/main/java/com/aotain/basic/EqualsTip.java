@@ -76,5 +76,8 @@ public class EqualsTip {
         String f = "hello"+"world";
         // true
         System.out.println(d == f);
+        // false
+        String g = "hello"+new String("2");
+        System.out.println(a == g);
     }
 }
