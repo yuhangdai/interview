@@ -85,6 +85,10 @@
     1.设置项目启动jvm参数(Edit Configurations->VM Options) -DproxySet=true -DproxyHost=127.0.0.1 -DproxyPort=8888
     2.设置fiddler代理端口 Tools->Options->Connections
     3.启动idea项目
+    
+
+#### github token
+ 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   
 
 
 

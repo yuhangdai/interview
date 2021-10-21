@@ -21,6 +21,7 @@ public class MyRunnable implements Runnable{
         System.out.println(Thread.currentThread().getName()+" "+command+" is running"+"  ==="+ new Date());
         try{
             Thread.sleep(60000);
+//            throw new RuntimeException();
         } catch (Exception e){
 
         }

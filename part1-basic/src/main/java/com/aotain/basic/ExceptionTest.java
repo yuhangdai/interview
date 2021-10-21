@@ -19,7 +19,23 @@ public class ExceptionTest {
 
     }
 
+
+    private static void exceptioninFor(){
+        try{
+            for (int i=0;i<100;i++){
+                if (i == 50){
+                    throw  new RuntimeException();
+                }
+            }
+        } catch (Exception e){
+
+        }
+        System.out.println("======");
+    }
+
     public static void main(String[] args) {
-        System.out.println(exceptionReturn("111"));
+//        String result = exceptionReturn(null);
+//        System.out.println(result);
+        exceptioninFor();
     }
 }
