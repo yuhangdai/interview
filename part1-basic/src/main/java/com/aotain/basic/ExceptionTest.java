@@ -14,7 +14,8 @@ public class ExceptionTest {
         } catch (Exception e){
             return "exception result";
         } finally {
-            return "finally result";
+            System.out.println("aaaaaaa");
+//            return "finally result";
         }
 
     }
@@ -23,7 +24,8 @@ public class ExceptionTest {
     private static void exceptioninFor(){
         try{
             for (int i=0;i<100;i++){
-                if (i == 50){
+                if (i %50 == 0){
+                    System.out.println(i);
                     throw  new RuntimeException();
                 }
             }
@@ -34,8 +36,8 @@ public class ExceptionTest {
     }
 
     public static void main(String[] args) {
-//        String result = exceptionReturn(null);
-//        System.out.println(result);
-        exceptioninFor();
+        String result = exceptionReturn("");
+        System.out.println(result);
+//        exceptioninFor();
     }
 }

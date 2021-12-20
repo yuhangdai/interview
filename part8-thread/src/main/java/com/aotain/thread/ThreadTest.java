@@ -106,7 +106,7 @@ public class ThreadTest {
             e.printStackTrace();
         }
 
-
+        // NEW、WAITING、TIME_WAITING、RUNNING、TERMINATED、
 
     }
 
