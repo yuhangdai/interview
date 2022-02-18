@@ -18,11 +18,12 @@ Redis 最具特色的一个数据结构了，它类似于 Java 中 SortedSet 和
 一方面它是一个 set，保证了内部 value 的唯一性，另一方面它可以为每个 value 赋予一个 score 值，用来代表排序的权重.
 内部实现由「跳跃表」 数据结构实现
 
-
 #### HyperLog Log
 #### Bloom Filter
 #### Geo Hash
 
-#### 持久化
+### redis使用场景以及存在问题
+
+### 持久化原理以及各自优缺点
 - RDB
 - AOF
