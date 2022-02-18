@@ -25,6 +25,6 @@ public class MyRunnable implements Runnable{
         } catch (Exception e){
 
         }
-
+        System.out.println(Thread.currentThread().getName()+" "+command+" end at "+"  ==="+ new Date());
     }
 }
